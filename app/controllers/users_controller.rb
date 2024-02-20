@@ -46,7 +46,7 @@ class UsersController < ApplicationController
 
   def user_params
     # TODO password? admin?
-    params.require[:user].permit(:first_name, :last_name, :email)
+    params.require[:user].permit(:first_name, :last_name, :email, :password, :password_confirmation)
   end
 end
 end 
